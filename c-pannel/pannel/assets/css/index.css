@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+/**************************************
+Header Section Css Starts From Here  
+***************************************/
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background:#eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color:var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+header {
+    height: 60px;
+    background: #111;
+    padding: 0px 10px;
+}
+#headerContent {
+    position: fixed;
+    top: 60px;
+    width: 16%;
+    left: 0;
+    height: 91vh;
+    background: #222;
+    padding: 1rem 1%;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+#menu-bars {
+    color: var(--green);
+    font-size: 26px;
+    position: relative;
+    top: -30px;
+    display: none;
+    cursor: pointer;
+    left: 170px;
+}
+#menu-barsCross {
+    color: red;
+    font-size: 26px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    left: 10px;
+}
+#menu-barsCross2 {
+    color: red;
+    font-size: 26px;
+    position: relative;
+    top: -30px;
+    cursor: pointer;
+    left: 170px;
+}
+header .logo{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.profile{
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+i.fas.fa-utensils {
+    margin-top: 20px;
+}
+header .logo {
+ text-decoration: none;
+}
+header .logo i{
+    color:var(--green);
+}
+
+header .navbar{
+display: grid;
+margin-top: 30px;
+}
+#profileModal{
+    background: rgb(255, 255, 255);
+    padding: 20px 15px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-left: 25px;
+    display: none;
+}
+span.active.fas.fa-times.text-right {
+    text-align: right;
+    position: relative;
+    right: -90px;
+    font-size: 22px;
+    color: red;
+    cursor: pointer;
+    top: -22px;
+}
+#profileModal a.active{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background-color: var(--green);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+}
+
+header .icons {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    text-decoration: none;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:#fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+
+/********************************
+ Header Section Css Ends To Here 
+ ********************************/
+
+
+
+
+/********************************
+ Main Section Css Starts From Here 
+ ********************************/
+ .main {
+    width: 84%;
+    margin-left: auto;
+    padding: 30px;
+}
+#main{
+width: 100%;
+}
+.summaryBox1{
+    border-radius: 5px;
+    background: cornflowerblue;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.summaryBox2 {
+    border-radius: 5px;
+    background: linear-gradient(45deg, #FF5370, #ff869a);
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.summaryBox3 {
+    border-radius: 5px;
+    background: #0bdc96;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.summaryBox4{
+    border-radius: 5px;
+    background: #000;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.summaryBox1:hover{
+    box-shadow: 0 0 25px -5px #27ae60;
+    transform: scale(1.1);
+    margin: 0px 5px;
+    transition: .3s;
+
+}
+.summaryBox2:hover{
+    box-shadow: 0 0 25px -5px #27ae60;
+    transform: scale(1.1);
+    margin: 0px 5px;
+    transition: .3s;
+
+}
+.summaryBox3:hover{
+    box-shadow: 0 0 25px -5px #27ae60;
+    transform: scale(1.1);
+    margin: 0px 5px;
+    transition: .3s;
+
+}
+.summaryBox4:hover{
+    box-shadow: 0 0 25px -5px #27ae60;
+    transform: scale(1.1);
+    margin: 0px 5px;
+    transition: .3s;
+
+}
+.coutn{
+    text-align: right;
+}
+/********************************
+ Main Section Css Ends To Here 
+ ********************************/
+
+
+
+ /***********************************
+ Add Admins Page Css Starts From Here 
+ ***********************************/
+ input#inputTag {
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #27ae60;
+}
+
+
+
+
+
+
+/********************************
+ Main Section Css Ends To Here 
+ ********************************/
+
+
+
+
